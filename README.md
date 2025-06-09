@@ -3,7 +3,7 @@
 
 This project performs multi-class classification of retinal diseases using Optical Coherence Tomography (OCT) images. The model is trained to classify images into four categories: **CNV, DME, DRUSEN, and NORMAL** using transfer learning techniques.
 
-## 📁 Dataset
+##  Dataset
 
 The dataset used is the **OCT2017** retinal dataset, which contains 4 main classes:
 - CNV (Choroidal Neovascularization)
@@ -13,7 +13,7 @@ The dataset used is the **OCT2017** retinal dataset, which contains 4 main class
 
 The data is organized into `train/`, `test/`, and `val/` folders, each containing class-based subfolders.
 
-## 🧠 Model Architecture
+##  Model Architecture
 
 We used **MobileNetV2** (pre-trained on ImageNet) as a feature extractor. The top layers were replaced with a custom classification head:
 
@@ -24,14 +24,14 @@ We used **MobileNetV2** (pre-trained on ImageNet) as a feature extractor. The to
 
 The feature extractor is frozen during initial training.
 
-## ⚙️ Techniques Used
+##  Techniques Used
 
 - `ImageDataGenerator` for real-time data augmentation
 - `class_weight` handling for imbalanced classes
 - Transfer Learning with `MobileNetV2`
 - Callbacks: `EarlyStopping`, `ReduceLROnPlateau`, `ModelCheckpoint`
 
-## 📊 Evaluation Metrics
+##  Evaluation Metrics
 
 - Accuracy
 - Precision
@@ -47,7 +47,7 @@ Recall avg:     0.93
 F1-score avg:   0.93
 ```
 
-## 📈 Results
+##  Results
 
 The model performed well across all four classes, with minor confusion between CNV and DRUSEN.
 
@@ -63,7 +63,7 @@ The model performed well across all four classes, with minor confusion between C
 ### Sample Misclassification:
 Displayed misclassified images with predicted and true labels for manual analysis.
 
-## 🛠 Libraries Used
+##  Libraries Used
 
 - TensorFlow / Keras
 - OpenCV
