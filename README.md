@@ -63,7 +63,7 @@ The model performed well across all four classes, with minor confusion between C
 ### Sample Misclassification:
 Displayed misclassified images with predicted and true labels for manual analysis.
 
-##  Libraries Used
+##  Libraries Use
 
 - TensorFlow / Keras
 - OpenCV
